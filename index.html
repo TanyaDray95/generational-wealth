@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generational Wealth Analytics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'background': '#f8fafc',
+              'card': '#ffffff',
+              'primary-text': '#1e293b',
+              'secondary-text': '#64748b',
+              'border': '#e2e8f0',
+              'accent': '#4f46e5',
+              'accent-hover': '#4338ca',
+              'accent-light': '#e0e7ff',
+              'perf-bg': '#F5F5F0',
+              'perf-text-primary': '#374151',
+              'perf-text-secondary': '#6b7280',
+              'perf-positive': '#16a34a',
+              'perf-negative': '#dc2626',
+              'perf-bar-dark': '#374151',
+              'perf-bar-light': '#d1d5db',
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-in-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: 0, transform: 'translateY(10px)' },
+                '100%': { opacity: 1, transform: 'translateY(0)' },
+              },
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      :root {
+        --color-perf-bar-dark: #374151;
+        --color-perf-bar-light: #d1d5db;
+        --color-perf-bg: #F5F5F0;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.8.0/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://unpkg.com/html-to-docx@1.8.0/dist/html-to-docx.js"></script>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.2.0",
+    "react/jsx-runtime": "https://esm.sh/react@19.2.0/jsx-runtime",
+    "react-dom/client": "https://esm.sh/react-dom@19.2.0/client",
+    "@google/genai": "https://esm.sh/@google/genai@1.29.1",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.45.4",
+    "pdfjs-dist": "https://esm.sh/pdfjs-dist@4.4.168",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-background">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
